@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- w3 css -->
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <title>Lista de compras</title>
+</head>
+<body>
+    <div class="w3-row">
+        <div class="w3-col m12 w3-padding w3-red">
+               <h1>Lista de compras</h1>
+        </div>
+    </div>
+
+    <!-- <div class="w3-row">
+        <div class="w3-col m12 w3-center">
+               <h2 >Listas existentes</h2>
+               <span onclick="nomeList()" class="w3-badge w3-large add w3-red w3-padding w3-button w3-hover-red">+</span>
+             
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m12 ">
+             <div id="container" class="w3-container w3-center "> -->
+              
+                 <!-- <p class="w3-painel w3-yellow w3-padding lista">ola mundo o tato roel a ropa do rei de roma</p> -->
+             <!-- </div>
+        </div>
+    </div> -->
+
+    <div class="w3-row sem-Imprimir">
+        <div class="w3-col m12 w3-center">
+               <h3 class="w3-margin-top">Adicionar items</h3>
+             
+        </div>
+    </div>
+
+    <div class="w3-row-padding  sem-Imprimir">
+        <div class="w3-col m6">
+          <input id="nome" class="w3-input w3-border w3-margin-top" type="text" placeholder="nome do produto" required>
+        </div>
+        <div  class="w3-col m2">
+          <input id="quantidade" class="w3-input w3-border w3-margin-top" type="number" placeholder="quantidade" required>
+        </div>
+        <div class="w3-col m2">
+            <select id="opcoes" class="w3-select w3-margin-top" name="option" >
+                <option value="">tipo</option>
+                <option value="Lata">Lata</option>
+                <option value="Kilo">kilo</option>
+                <option value="Gramas">gramas</option>
+                <option value="Litros">litros</option>
+                <option value="Unidade" selected>Unidade</option>
+              </select>
+          </div>
+        <div class="w3-col m2">
+            <button onclick="intemLista()" class="w3-button w3-red w3-round-small w3-margin-top w3-block">Adicionar</button>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-col m12 ">
+            <ul id="ul" class="w3-ul ">
+
+              </ul>
+             
+        </div>
+    </div>
+
+    <div class="w3-row-padding sem-Imprimir">
+        <div class="col m12">
+            <button onclick="print()" class="w3-button w3-red w3-round-small w3-margin-top w3-block">Imprimir</button>
+        </div>
+    </div>
+
+
+
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
